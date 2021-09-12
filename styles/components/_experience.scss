@@ -1,0 +1,66 @@
+.experience {
+  position: relative;
+  border-left: 0.05rem solid rgba($indigo-300, 0.6);
+  padding-left: 0.32rem;
+
+  &:not(:last-child) {
+    padding-bottom: 0.24rem;
+  }
+
+  &--active::before {
+    box-shadow: 0 0 0.2rem 0.04rem #6366f1;
+    background-color: $indigo-500;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -0.145rem;
+    top: 0.02rem;
+    width: 0.24rem;
+    height: 0.24rem;
+    background-color: $indigo-600;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  &:first-of-type,
+  &:last-of-type {
+    &::after {
+      content: '';
+      position: absolute;
+      left: -0.1rem;
+      width: 0.2rem;
+      top: 0;
+      height: 0.2rem;
+      background-color: $blue-gray-800;
+    }
+  }
+
+  &:last-of-type {
+    &::after {
+      top: 0.2rem;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: baseline;
+    font-size: 0.24rem;
+    margin-bottom: 0.08rem;
+  }
+
+  &__company {
+    color: $blue-300;
+    margin-right: 0.16rem;
+  }
+
+  &__job-title {
+    color: $indigo-200;
+  }
+
+  &__accomplishments {
+    font-size: 0.2rem;
+    line-height: 1.5;
+  }
+}

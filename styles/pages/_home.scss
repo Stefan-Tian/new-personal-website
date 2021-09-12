@@ -1,0 +1,41 @@
+.home {
+  font-size: 0.4rem;
+  color: $blue-50;
+  margin-top: 0.4rem;
+
+  &__top-section {
+    height: 5rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+  }
+
+  &__gradient {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &--bp {
+      background-image: linear-gradient(to right, $indigo-500, $light-blue-500);
+    }
+
+    &--ry {
+      background-image: linear-gradient(to right, $red-500, $yellow-500);
+    }
+  }
+
+  &__image-wrapper {
+    width: 5.34rem;
+    height: 4.65rem;
+    margin-left: 0.32rem;
+    pointer-events: none;
+  }
+
+  &__intro {
+    width: 6.5rem;
+
+    &--part2 {
+      display: inline-block;
+      margin-top: 0.42rem;
+    }
+  }
+}

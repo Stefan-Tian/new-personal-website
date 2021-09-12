@@ -1,0 +1,17 @@
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'styles/pages/home.scss';
+@import 'styles/components/appbar.scss';
+@import 'styles/components/experience.scss';
+@import 'styles/components/experience-list.scss';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+
+body {
+  background-color: $blue-gray-800;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+}
+
+.global-container {
+  max-width: 12rem;
+  margin: auto;
+}
