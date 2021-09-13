@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import type { NextPage } from 'next';
 import ExperienceList from 'components/ExperienceList';
+
+import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
   return (
