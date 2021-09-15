@@ -3,7 +3,9 @@ import Link from 'next/link';
 const Appbar = () => {
   return (
     <header className="appbar">
-      <div className="appbar__name">Stefan Tien</div>
+      <Link href="/">
+        <a className="appbar__name">Stefan Tien</a>
+      </Link>
       <div className="appbar__list">
         <Link href="/projects">
           <a className="appbar__listitem">projects</a>

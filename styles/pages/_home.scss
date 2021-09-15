@@ -11,15 +11,8 @@
   }
 
   &__gradient {
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
     &--bp {
-      background-image: linear-gradient(to right, $indigo-500, $light-blue-500);
-    }
-
-    &--ry {
-      background-image: linear-gradient(to right, $red-500, $yellow-500);
+      @include text-gradient($indigo-500, $light-blue-500);
     }
   }
 
