@@ -1,0 +1,25 @@
+.project {
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.16rem;
+  margin-bottom: 0.32rem;
+  background-color: $blue-gray-700;
+
+  &__img-wrapper {
+    width: 4.55rem;
+    height: 2.3rem;
+    border-radius: 0.2rem;
+    margin-bottom: 0.16rem;
+
+    img {
+      border-radius: 0.2rem;
+    }
+  }
+
+  &__name {
+    font-size: 0.24rem;
+    color: $blue-50;
+  }
+}

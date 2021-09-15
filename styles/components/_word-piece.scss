@@ -1,0 +1,37 @@
+.word-piece {
+  &__animation {
+    opacity: 0;
+    color: $indigo-500;
+    animation: fade-in 0.8s linear;
+    animation-fill-mode: forwards;
+  }
+
+  &__gradient {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, $indigo-500, $light-blue-500);
+    animation: gradient-slide 1s ease 1s;
+    background-size: 400% auto;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes gradient-slide {
+    0% {
+      background-size: 400% auto;
+    }
+
+    100% {
+      background-size: 100% auto;
+    }
+  }
+}

@@ -4,6 +4,9 @@
 @import 'styles/components/appbar.scss';
 @import 'styles/components/experience.scss';
 @import 'styles/components/experience-list.scss';
+@import 'styles/components/word-piece.scss';
+@import 'styles/components/project.scss';
+@import 'styles/components/project-list.scss';
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
 
 body {
@@ -14,4 +17,11 @@ body {
 .global-container {
   max-width: 12rem;
   margin: auto;
+}
+
+.copyright {
+  line-height: 4;
+  font-size: 0.24rem;
+  text-align: center;
+  color: $blue-200;
 }

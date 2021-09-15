@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <div className="global-container">
       <Appbar />
       <Component {...pageProps} />
+      <div className="copyright">© since 2021 Stefan Tien</div>
     </div>
   );
 }
