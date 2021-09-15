@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import ExperienceList from 'components/ExperienceList';
+import WordPiece from 'components/WordPiece';
 
 import type { NextPage } from 'next';
 
@@ -8,20 +9,12 @@ const Home: NextPage = () => {
     <div className="home">
       <div className="home__top-section">
         <div className="home__intro">
-          Hi, I’m Stefan, a{' '}
-          <span className="home__gradient home__gradient--bp">
-            software engineer
-          </span>{' '}
-          specializing in the{' '}
-          <span className="home__gradient home__gradient--bp">frontend</span>.
+          Hi, I’m Stefan, a <WordPiece word="software engineer" /> specializing
+          in <WordPiece word="frontend" />.
           <br />
           <span className="home__intro--part2">
             I have over 2 years of professional experience building production
-            ready web applications using{' '}
-            <span className="home__gradient home__gradient--bp">
-              React and Vue
-            </span>
-            .
+            ready web applications using <WordPiece word="React and Vue" />.
           </span>
         </div>
         <div className="home__image-wrapper">

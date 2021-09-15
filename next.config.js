@@ -7,6 +7,9 @@ module.exports = {
     includePaths: [path.join(__dirname, 'styles')],
   },
   images: {
-    domains: ['ignyte-public.s3.us-west-1.amazonaws.com'],
+    domains: [
+      'ignyte-public.s3.us-west-1.amazonaws.com',
+      'stefantien-personal-site.s3.us-west-1.amazonaws.com',
+    ],
   },
 };

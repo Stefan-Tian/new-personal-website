@@ -1,5 +1,8 @@
+$blue-gray-700: #334155;
 $blue-gray-800: #1e293b;
+$blue-gray-900: #0f173a;
 $blue-gray-600: #475569;
+$blue-600: #2563eb;
 $blue-300: #93c5fd;
 $blue-200: #bfdbfe;
 $blue-50: #eff6ff;
@@ -10,3 +13,9 @@ $indigo-200: #c7d2fe;
 $light-blue-500: #0ea5e9;
 $red-500: #ef4444;
 $yellow-500: #f59e0b;
+
+@mixin text-gradient($color-left, $color-right) {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, $color-left, $color-right);
+}
