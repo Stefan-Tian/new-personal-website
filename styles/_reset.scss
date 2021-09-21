@@ -11,6 +11,10 @@ html {
   @media screen and (max-width: 1400px) {
     font-size: calc(100vw / 1400 * 100);
   }
+
+  @media screen and (max-width: 800px) {
+    font-size: calc(100vw / 800 * 100);
+  }
 }
 
 *,

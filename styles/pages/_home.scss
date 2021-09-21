@@ -3,6 +3,10 @@
   color: $blue-50;
   margin-top: 0.4rem;
 
+  @media screen and (max-width: 800px) {
+    font-size: 0.32rem;
+  }
+
   &__top-section {
     height: 5rem;
     line-height: 1.5;

@@ -1,6 +1,11 @@
 .project-list {
   margin: auto;
-  width: 10.2em;
+  width: 10.2rem;
+
+  @media screen and (max-width: 800px) {
+    width: 6rem;
+    text-align: center;
+  }
 
   &__title {
     @include text-gradient($indigo-500, $light-blue-500);

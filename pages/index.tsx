@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import ExperienceList from 'components/ExperienceList';
 import WordPiece from 'components/WordPiece';
+import services from 'services';
 
 import type { NextPage } from 'next';
 
@@ -31,5 +32,13 @@ const Home: NextPage = () => {
     </div>
   );
 };
+
+export async function getServerSideProps() {
+  const res = await services.getExperiences();
+
+  return {
+    props: { experiences: res.data },
+  };
+}
 
 export default Home;
