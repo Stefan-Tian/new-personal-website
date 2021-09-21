@@ -17,6 +17,10 @@ body {
 .global-container {
   max-width: 12rem;
   margin: auto;
+
+  @media screen and (max-width: 800px) {
+    max-width: 7.2rem;
+  }
 }
 
 .copyright {

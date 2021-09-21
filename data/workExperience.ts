@@ -19,7 +19,7 @@ const list = [
     accomplishments: [
       'Rebuilt customer-facing, internal dashboard, and content management frontend from scratch using React.',
       'Used React hooks and Context API for better code reusability and state management across components.',
-      'Created project manage page to handle video/image uploading, upload progress checking, and content editing',
+      'Created project manage page to handle video/image uploading, upload progress checking, and content editing.',
       'Implemented pagination, filter, and debounce search on the explore page, allowing users to find their desired result efficiently.',
       'Introduced input validation schema on all forms to catch errors and provide users with precise feedback.',
       'Designed highly reusable react hooks to handle authorization, search, pagination, and image source checking.',
