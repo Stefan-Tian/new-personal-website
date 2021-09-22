@@ -76,6 +76,7 @@ const projects = [
       'Users can get the jackpot either by drawing or reaching a certain point.',
     ],
     challenges: [
+      'Creating an interactive tutorial using mock data to intercept the real API.',
       'Constructing a custom data structure to facilitate the selection process of milestones in order to accomodate for different configurations.',
     ],
     techStack: ['Vue2', 'Vuex', 'Vue i18n', 'Sass'],
@@ -90,6 +91,12 @@ const projects = [
     blurImgPath:
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/wintoken-blur.jpg',
     descriptions: [
+      'Users can sign in every day to get a reward.',
+      'Users can pay some coins to re-sign in if they miss the date.',
+      'Users can get extra rewards if they win games or reaching certain win streaks.',
+      'Users can type in promo code dispensed by the marketing team to redeem rewards.',
+    ],
+    challenges: [
       'Making an unorthodox and customized scrollbar for the modal.',
       'Using a slider as a scrollbar to match the design.',
     ],
@@ -101,6 +108,7 @@ const projects = [
     imgPaths: [
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/slotmachine-1.jpg',
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/slotmachine-2.jpg',
+      'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/slotmachine-3.jpg',
     ],
     blurImgPath:
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/slotmachine-blur.jpg',
@@ -197,6 +205,9 @@ const projects = [
       'Users can get milestone rewards when reaching certain thresholds.',
       'Users can spend some coins to reselect the prizes.',
     ],
+    challenges: [
+      'Handling keyword search for Vietnamese by normalizing the strings and replacing excess Unicode.',
+    ],
     techStack: ['Vue2', 'Vuex', 'Vue i18n', 'Sass'],
   },
   {
@@ -232,7 +243,7 @@ const projects = [
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/refresh-gacha-blur.jpg',
     descriptions: [
       'Users can select a jackpot and start the drawing process.',
-      'Users can spend some coin and do 1 draw.',
+      'Users can spend some coins and do 1 draw.',
       'The items on the board will refresh after each draw.',
       'Users can refresh any item with a lower price.',
       'Users will be prompt to select a new jackpot and start the process again if they get the one they first selected.',
