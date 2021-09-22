@@ -1,6 +1,13 @@
 .project-page {
+  margin-top: 0.6rem;
+
+  &__not-found {
+    font-size: 0.32rem;
+    color: $indigo-500;
+    height: 50vh;
+  }
+
   &__name {
-    margin-top: 0.6rem;
     color: $blue-600;
     font-size: 0.32rem;
     margin-bottom: 0.32rem;
@@ -17,6 +24,8 @@
     -o-border-radius: 0.2rem;
 
     img {
+      width: 100%;
+      height: 100%;
       border-radius: 0.2rem;
       -webkit-border-radius: 0.2rem;
       -moz-border-radius: 0.2rem;
