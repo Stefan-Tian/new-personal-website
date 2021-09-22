@@ -10,6 +10,7 @@ const Projects: NextPage = () => {
         {projects.map(({ id, name, imgPaths, blurImgPath }) => (
           <Project
             key={id}
+            id={id}
             name={name}
             blurImgPath={blurImgPath}
             imgPath={imgPaths[0]}
