@@ -1,0 +1,46 @@
+.project-page {
+  &__name {
+    margin-top: 0.6rem;
+    color: $blue-600;
+    font-size: 0.32rem;
+    margin-bottom: 0.32rem;
+  }
+
+  &__image-wrapper {
+    width: 9.16rem;
+    height: 4.63rem;
+    margin: 0 0.16rem;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+
+    img {
+      border-radius: 0.2rem;
+      -webkit-border-radius: 0.2rem;
+      -moz-border-radius: 0.2rem;
+      -ms-border-radius: 0.2rem;
+      -o-border-radius: 0.2rem;
+    }
+  }
+
+  &__section__title {
+    font-size: 0.24rem;
+    color: $indigo-500;
+    margin-top: 0.32rem;
+  }
+
+  &__tech {
+    margin-right: 0.16rem;
+  }
+  &__section__line {
+    margin: 0.24rem 0;
+  }
+
+  &__section__line,
+  &__section__list {
+    font-size: 0.28rem;
+    color: $blue-50;
+  }
+}
