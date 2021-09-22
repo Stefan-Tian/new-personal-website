@@ -33,6 +33,7 @@ const Project = () => {
         {currentProject.imgPaths.map((imgPath) => (
           <div key={imgPath} className="project-page__image-wrapper">
             <Image
+              priority={true}
               src={imgPath}
               width={4.55}
               height={2.3}
