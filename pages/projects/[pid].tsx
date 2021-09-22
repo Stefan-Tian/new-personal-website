@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import { useRouter } from 'next/router';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 
 import projects from 'data/projects';
@@ -10,7 +11,7 @@ const Project = () => {
 
   if (typeof pid !== 'string') {
     return (
-      <div>
+      <div className="project-page project-page__not-found">
         Oops, seems like the project has been classified as a top secret.
       </div>
     );
@@ -20,7 +21,7 @@ const Project = () => {
 
   if (!currentProject) {
     return (
-      <div>
+      <div className="project-page project-page__not-found">
         Oops, seems like the project has been classified as a top secret.
       </div>
     );
@@ -32,14 +33,7 @@ const Project = () => {
       <Marquee speed={100} gradient={false} pauseOnHover={true}>
         {currentProject.imgPaths.map((imgPath) => (
           <div key={imgPath} className="project-page__image-wrapper">
-            <Image
-              priority={true}
-              src={imgPath}
-              width={4.55}
-              height={2.3}
-              layout="responsive"
-              alt="project screenshot"
-            />
+            <img src={imgPath} alt="project screenshot" />
           </div>
         ))}
       </Marquee>
