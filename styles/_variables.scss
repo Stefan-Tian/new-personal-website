@@ -16,6 +16,7 @@ $yellow-500: #f59e0b;
 
 @mixin text-gradient($color-left, $color-right) {
   background-clip: text;
+  display: inline-block;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(to right, $color-left, $color-right);
 }
