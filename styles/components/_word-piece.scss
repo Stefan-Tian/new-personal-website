@@ -7,9 +7,7 @@
   }
 
   &__gradient {
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, $indigo-500, $light-blue-500);
+    @include text-gradient($indigo-500, $light-blue-500);
     animation: gradient-slide 1s ease 1s;
     background-size: 400% auto;
     animation-fill-mode: forwards;
