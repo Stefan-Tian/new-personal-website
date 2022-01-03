@@ -1,4 +1,4 @@
-const projects = [
+const garenaProjects = [
   {
     id: 1,
     name: 'AOV - Skin upgrade',
@@ -280,4 +280,4 @@ const projects = [
   },
 ];
 
-export default projects;
+export { garenaProjects };

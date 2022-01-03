@@ -1,11 +1,18 @@
 /* eslint-disable @next/next/next-script-for-ga */
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html>
         <Head>
+          <title>Stefan Tien's Personal Website</title>
+          <meta name="description" content="Stefan Tien's personal website" />
+          <meta name="author" content="Stefan Tien" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-Z29C8937YB"

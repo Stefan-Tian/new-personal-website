@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 // import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 
-import projects from 'data/projects';
+import { garenaProjects } from 'data/projects';
 
 const Project = () => {
   const router = useRouter();
@@ -17,7 +17,9 @@ const Project = () => {
     );
   }
 
-  const currentProject = projects.find(({ id }) => id === parseInt(pid, 10));
+  const currentProject = garenaProjects.find(
+    ({ id }) => id === parseInt(pid, 10)
+  );
 
   if (!currentProject) {
     return (
