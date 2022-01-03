@@ -1,12 +1,11 @@
 /* eslint-disable @next/next/next-script-for-ga */
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html>
         <Head>
-          <title>Stefan Tien's Personal Website</title>
           <meta name="description" content="Stefan Tien's personal website" />
           <meta name="author" content="Stefan Tien" />
           <meta
