@@ -1,0 +1,22 @@
+@use 'styles/mixins';
+
+.appbar {
+  @include mixins.content-container;
+  padding: var(--spacing-lg) var(--spacing-md);
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: var(--text-md);
+  color: var(--color-primary);
+  margin-right: auto;
+}
+
+.navItem {
+  font-size: var(--text-sm);
+  &:not(:last-of-type) {
+    margin-right: var(--spacing-lg);
+  }
+}

@@ -1,7 +1,8 @@
 import type { NextPage } from 'next';
-import Project from 'components/Project';
+import ProjectCard from 'components/project-card';
 import { garenaProjects } from 'data/projects';
 import Head from 'next/head';
+import Categories from 'components/categories';
 
 const Projects: NextPage = () => {
   return (
@@ -9,21 +10,28 @@ const Projects: NextPage = () => {
       <Head>
         <title>Stefan Tien - Projects</title>
       </Head>
-      <div className="project-list">
-        <div className="project-list__title">
-          My Public Projects From Garena
-        </div>
-        <div className="project-list__group">
-          {garenaProjects.map(({ id, name, imgPaths, blurImgPath }) => (
-            <Project
+      {/* <Categories categories={['Garena']} /> */}
+      <div>
+        {garenaProjects.map(
+          ({
+            id,
+            name,
+            imgPaths,
+            blurImgPath,
+            descriptions,
+            techStackIcons,
+          }) => (
+            <ProjectCard
               key={id}
               id={id}
               name={name}
               blurImgPath={blurImgPath}
               imgPath={imgPaths[0]}
+              descriptions={descriptions}
+              techStackIcons={techStackIcons}
             />
-          ))}
-        </div>
+          )
+        )}
       </div>
     </>
   );

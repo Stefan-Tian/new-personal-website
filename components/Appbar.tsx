@@ -1,24 +1,25 @@
 import Link from 'next/link';
+import styles from 'styles/modules/appbar.module.scss';
 
 const Appbar = () => {
   return (
-    <header className="appbar">
-      <Link href="/">
-        <a className="appbar__name">Stefan Tien</a>
+    <header className={styles.appbar}>
+      <Link href="/" className={styles.brand}>
+        Stefan Tien
       </Link>
-      <div className="appbar__list">
-        <Link href="/projects">
-          <a className="appbar__listitem">projects</a>
+      <nav>
+        <Link href="/projects" className={styles.navItem}>
+          projects
         </Link>
         <a
-          className="appbar__listitem"
+          className={styles.navItem}
           href="https://www.linkedin.com/in/stefan-tian-021542125/"
           target="_blank"
           rel="noreferrer"
         >
           linkedin
         </a>
-      </div>
+      </nav>
     </header>
   );
 };

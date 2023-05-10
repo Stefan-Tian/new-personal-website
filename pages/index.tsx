@@ -1,49 +1,41 @@
-import Image from 'next/image';
 import Head from 'next/head';
-import ExperienceList from 'components/ExperienceList';
-import WordPiece from 'components/WordPiece';
+import ExperienceList from 'components/experience-list';
+import WordPiece from 'components/word-piece';
+import styles from 'styles/modules/home.module.scss';
 
 import type { NextPage } from 'next';
+import Image from 'next/image';
 
 const Home: NextPage = () => {
   return (
     <>
       <Head>
         <title>Stefan Tien - Personal Website</title>
+        <meta name="description" content="Stefan Tien - resume and portfolio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className="home">
-        <div className="home__top-section">
-          <div className="home__intro">
+      <div className={styles.hero}>
+        <p className={styles.intro}>
+          <span className={styles.paragraph}>
             Hi, I’m Stefan, a <WordPiece word="software engineer" />{' '}
-            specializing in <WordPiece word="frontend" />.
-            <br />
-            <span className="home__intro--part2">
-              I have over 2 years of professional experience building production
-              ready web applications using <WordPiece word="React and Vue" />.
-            </span>
-          </div>
-          <div className="home__image-wrapper">
-            <Image
-              width="100%"
-              height="100%"
-              src="https://ignyte-public.s3.us-west-1.amazonaws.com/personal-site-developer.svg"
-              layout="responsive"
-              alt="developer image"
-            />
-          </div>
+            specializing in <WordPiece word="frontend" />.<br />
+          </span>
+          I have over 3 years of professional experience building production
+          ready web applications using <WordPiece word="React and Vue" />.
+        </p>
+        <div className={styles.imageContainer}>
+          <Image
+            className={styles.image}
+            src="https://ignyte-public.s3.us-west-1.amazonaws.com/hero-developer.png"
+            width={400}
+            height={400}
+            alt="developer-portrait"
+          />
         </div>
-        <ExperienceList />
       </div>
+      <ExperienceList />
     </>
   );
 };
-
-// export async function getServerSideProps() {
-//   const res = await services.getExperiences();
-
-//   return {
-//     props: { experiences: res.data },
-//   };
-// }
 
 export default Home;

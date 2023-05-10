@@ -8,10 +8,6 @@ export default class MyDocument extends Document {
         <Head>
           <meta name="description" content="Stefan Tien's personal website" />
           <meta name="author" content="Stefan Tien" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-Z29C8937YB"

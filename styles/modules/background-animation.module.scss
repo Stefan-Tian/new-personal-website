@@ -1,0 +1,43 @@
+$border-color: rgba(#d9d3fd, 0.06);
+$border-breath-color: rgba(#c8c2eb, 0.1);
+
+// $background-column-count: 6;
+
+.root {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--container-max-width);
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(var(--column-count), 120px);
+}
+
+.column {
+  height: 100%;
+  border-right: 1px solid $border-color;
+
+  &:nth-child(even) {
+    animation: border-breathe 10s ease-in-out infinite alternate;
+  }
+}
+
+.column:first-child {
+  border-left: 1px solid $border-color;
+}
+
+@for $i from 1 through 12 {
+  .column:nth-child(#{$i}) {
+    animation-delay: #{$i * 1}s;
+  }
+}
+
+@keyframes border-breathe {
+  50% {
+    border-color: $border-breath-color;
+    border-width: 1.5px;
+  }
+}

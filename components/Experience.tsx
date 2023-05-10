@@ -1,26 +1,31 @@
+import styles from 'styles/modules/experience.module.scss';
+import TechStack from './tech-stack';
+
 interface ExperienceProps {
   isCurrent: boolean;
   company: string;
+  companyInfo: string;
   jobTitle: string;
+  date: string;
+  techStack: string[];
   accomplishments: string[];
 }
 
 const Experience = (props: ExperienceProps) => {
   return (
-    <div
-      className={`experience ${props.isCurrent ? 'experience--active' : ''}`}
-    >
-      <div className="experience__heading">
-        <div className="experience__company">{props.company}</div>
-        <div className="experience__job-title">{props.jobTitle}</div>
-      </div>
-      <div className="experience__accomplishments">
+    <div className={styles.root}>
+      <div className={styles.company}>{props.company}</div>
+      <div className={styles.companyInfo}>{props.companyInfo}</div>
+      <div className={styles.title}>{props.jobTitle}</div>
+      <div className={styles.date}>{props.date}</div>
+      <TechStack techStack={props.techStack} />
+      <ul className={styles.list}>
         {props.accomplishments.map((accomplishment, idx) => (
-          <div className="experience__accomplishment" key={idx}>
-            - {accomplishment}
-          </div>
+          <li className={styles.listItem} key={idx}>
+            {accomplishment}
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };

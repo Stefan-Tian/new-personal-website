@@ -1,0 +1,21 @@
+.root {
+  color: var(--color-white);
+  background-color: transparent;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: var(--text-xs);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+.active {
+  background-color: var(--color-primary-dark);
+
+  &:hover {
+    color: var(--color-white);
+  }
+}

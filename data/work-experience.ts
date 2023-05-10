@@ -1,8 +1,49 @@
 const list = [
   {
-    isCurrent: true,
+    isCurrent: false,
+    company: 'foodpanda',
+    companyInfo:
+      'A subsidiary of Delivery Hero, a global leader of the food delivery industry',
+    jobTitle: 'Frontend Software Engineer - Subscriptions foundation team',
+    date: '2022.04.06 - present',
+    techStack: [
+      'javascript',
+      'typescript',
+      'react',
+      'redux',
+      'html',
+      'css',
+      'sass',
+      'react-testing-library',
+      'cypress',
+      'git',
+    ],
+    accomplishments: [
+      'Collaborated with PMs and engineers across the globe to improve web experience by implementing new designs and contributing to the internal design system.',
+      'Improved development process and CI/CD pipeline speed by optimizing Drone CI configuration.',
+      'Coordinated with stakeholders to plan and implement features for a smoother operational process, such as the scheduling feature of the subscription plan management page, and cancel and delete subscriptions on the customer management page using Typescript, React, and React-Hook-Form.',
+      'Onboarded and mentored new engineers to the team and help them to get familiar with codebases and the development process.',
+      'Implemented frontend web changes for subscription launch in new countries.',
+    ],
+  },
+  {
+    isCurrent: false,
     company: 'Garena',
+    companyInfo: 'A leading global online games developer and publisher',
     jobTitle: 'Software Engineer, Frontend',
+    date: '2020.06.15 - 2022.03.25',
+    techStack: [
+      'javascript',
+      'typescript',
+      'vue',
+      'nuxt',
+      'webpack',
+      'html',
+      'css',
+      'sass',
+      'cypress',
+      'git',
+    ],
     accomplishments: [
       'Participated in migrating the frontend project template from Vue2 to Vue3 plus Typescript.',
       'Built a styleless component library for FreeFire projects that reduced development time by 16%.',
@@ -15,7 +56,18 @@ const list = [
   {
     isCurrent: false,
     company: 'DreamPlayer',
+    companyInfo:
+      'An ed-tech startup that provides online courses for investors',
     jobTitle: 'Frontend Engineer',
+    date: '2019.11.11 - 2020.04.09',
+    techStack: [
+      'javascript',
+      'react',
+      'html',
+      'css',
+      'styled-components',
+      'git',
+    ],
     accomplishments: [
       'Rebuilt customer-facing, internal dashboard, and content management frontend from scratch using React and Styled-Components.',
       'Used React hooks and Context API for better code reusability and state management across components.',
@@ -29,7 +81,10 @@ const list = [
   {
     isCurrent: false,
     company: 'Yotta',
+    companyInfo: 'A startup that provides online courses',
     jobTitle: 'Frontend Engineer',
+    date: '2019.07.01 - 2019.10.31',
+    techStack: ['javascript', 'html', 'css', 'git'],
     accomplishments: [
       'Visualized sales data with Chart.js to help the marketing team evaluate different strategies.',
       'Implemented tracking with google tag manager on the whole site to help the product team improve user flow.',

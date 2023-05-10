@@ -1,7 +1,7 @@
 const garenaProjects = [
   {
     id: 1,
-    name: 'AOV - Skin upgrade',
+    name: 'Arena of Valor - Skin upgrade',
     imgPaths: [
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/skinupgrade-1.jpg',
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/skinupgrade-2.jpg',
@@ -24,10 +24,11 @@ const garenaProjects = [
       'Sass',
       'Vue-i18n',
     ],
+    techStackIcons: ['vue', 'typescript', 'sass'],
   },
   {
     id: 2,
-    name: 'LOL - Data Review',
+    name: 'League of Legends - Data Review',
     imgPaths: [
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/datareview-1.jpg',
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/datareview-2.jpg',
@@ -56,10 +57,11 @@ const garenaProjects = [
       'Setting up internal cloud services to host the project.',
     ],
     techStack: ['Nuxt', 'Vuex', 'Nuxt i18n', 'Google Analytics 4', 'Sass'],
+    techStackIcons: ['nuxt', 'vue', 'javascript', 'sass'],
   },
   {
     id: 3,
-    name: 'CODM - Nine Grid',
+    name: 'Call of Duty Mobile - Nine Grid',
     imgPaths: [
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/ninegrid-3.jpg',
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/ninegrid-2.jpg',
@@ -80,10 +82,11 @@ const garenaProjects = [
       'Constructing a custom data structure to facilitate the selection process of milestones in order to accomodate for different configurations.',
     ],
     techStack: ['Vue2', 'Vuex', 'Vue i18n', 'Sass'],
+    techStackIcons: ['vue', 'javascript', 'sass'],
   },
   {
     id: 4,
-    name: 'LOL - Win Token',
+    name: 'League of Legends - Win Token',
     imgPaths: [
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/wintoken-1.jpg',
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/wintoken-2.jpg',
@@ -101,10 +104,11 @@ const garenaProjects = [
       'Using a slider as a scrollbar to match the design.',
     ],
     techStack: ['Vue2', 'Vuex', 'Vue i18n', 'Sass'],
+    techStackIcons: ['vue', 'typescript', 'sass'],
   },
   {
     id: 5,
-    name: 'FF - Slot Machine',
+    name: 'FreeFire - Slot Machine',
     imgPaths: [
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/slotmachine-1.jpg',
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/slotmachine-2.jpg',
@@ -125,10 +129,11 @@ const garenaProjects = [
       'Building a small styleless component library after finishing the project.',
     ],
     techStack: ['Vue2', 'Vuex', 'Vue i18n', 'Sass'],
+    techStackIcons: ['vue', 'javascript', 'sass'],
   },
   {
     id: 6,
-    name: 'CODM - Token Draw',
+    name: 'Call of Duty Mobile - Token Draw',
     imgPaths: [
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/tokendraw-2.jpg',
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/tokendraw-1.jpg',
@@ -148,10 +153,11 @@ const garenaProjects = [
       'Making sure users get correct results when pressing the quick select button and when they undo it by designing a customed data structure.',
     ],
     techStack: ['Vue2', 'Vuex', 'Vue i18n', 'Sass'],
+    techStackIcons: ['vue', 'javascript', 'sass'],
   },
   {
     id: 7,
-    name: 'CODM - Two Layer Gacha',
+    name: 'Call of Duty Mobile - Two Layer Gacha',
     imgPaths: [
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/twolayer-gacha-1.jpg',
     ],
@@ -167,10 +173,11 @@ const garenaProjects = [
       'Dealing with in-game browser issues that cannot be reproduced in other mainstream browsers by using different methods to simulate CSS active behavior on mobile.',
     ],
     techStack: ['Vue2', 'Vuex', 'Vue i18n', 'Sass'],
+    techStackIcons: ['vue', 'javascript', 'sass'],
   },
   {
     id: 8,
-    name: 'LOL - Chessboard',
+    name: 'League of Legends - Chessboard',
     imgPaths: [
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/chessboard-3.jpg',
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/chessboard-2.jpg',
@@ -188,10 +195,11 @@ const garenaProjects = [
       'Handling blurry-image issues in the in-game browser by moving images outside of the same layer as its wrapper.',
     ],
     techStack: ['Vue2', 'Vuex', 'Vue i18n', 'Sass'],
+    techStackIcons: ['vue', 'javascript', 'sass'],
   },
   {
     id: 9,
-    name: 'LOL - Choose Gacha',
+    name: 'League of Legends - Choose Gacha',
     imgPaths: [
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/choose-gacha-1.jpg',
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/choose-gacha-2.jpg',
@@ -209,10 +217,11 @@ const garenaProjects = [
       'Handling keyword search for Vietnamese by normalizing the strings and replacing excess Unicode.',
     ],
     techStack: ['Vue2', 'Vuex', 'Vue i18n', 'Sass'],
+    techStackIcons: ['vue', 'javascript', 'sass'],
   },
   {
     id: 10,
-    name: 'AOV - AOVxUltraman',
+    name: 'Arena of Valor - AOVxUltraman',
     imgPaths: [
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/ultraman-1.jpg',
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/ultraman-2.jpg',
@@ -231,10 +240,11 @@ const garenaProjects = [
       'Designing routing user experience with the minimum specification.',
     ],
     techStack: ['Vue2', 'Vuex', 'Vue i18n', 'Sass'],
+    techStackIcons: ['vue', 'javascript', 'sass'],
   },
   {
     id: 11,
-    name: 'CODM - Refresh Gacha',
+    name: 'Call of Duty Mobile - Refresh Gacha',
     imgPaths: [
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/refresh-gacha-1.jpg',
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/refresh-gacha-2.jpg',
@@ -253,10 +263,11 @@ const garenaProjects = [
       'Coming up with clarifying questions early on to make sure how we handle edge cases fit the expectation of the stakeholders.',
     ],
     techStack: ['Vue2', 'Vuex', 'Vue i18n', 'Sass'],
+    techStackIcons: ['vue', 'javascript', 'sass'],
   },
   {
     id: 12,
-    name: 'FTM - Preregistration site',
+    name: 'Fairy Tale Mobile - Preregistration site',
     imgPaths: [
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/ftm-11.jpg',
       'https://stefantien-personal-site.s3.us-west-1.amazonaws.com/garena-projects/ftm-10.jpg',
@@ -277,6 +288,7 @@ const garenaProjects = [
       'Debugging GA tracking bug that occurred after login redirect by updating our login flow.',
     ],
     techStack: ['Vue2', 'Vuex', 'Vue i18n', 'Sass'],
+    techStackIcons: ['vue', 'javascript', 'sass'],
   },
 ];
 
