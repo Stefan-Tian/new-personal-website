@@ -60,7 +60,6 @@
     box-shadow: 0 0 4px 2px var(--color-primary);
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: (27px - 6px) / 2;
   }
 }
