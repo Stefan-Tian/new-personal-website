@@ -91,7 +91,7 @@
 }
 
 .listItem {
-  padding-left: var(--spacing-lg);
+  padding: 0 var(--spacing-lg);
   position: relative;
 
   &::before {
