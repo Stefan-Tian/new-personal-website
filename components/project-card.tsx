@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import styles from 'styles/modules/project-card.module.scss';
 
@@ -31,14 +30,7 @@ const ProjectCard = ({
         ))}
       </ol>
       <div className={styles.imageContainer}>
-        <Image
-          width={455}
-          height={230}
-          src={imgPath}
-          alt={`${name} image`}
-          blurDataURL={blurImgPath}
-          placeholder="blur"
-        />
+        <img src={imgPath} alt={`${name} image`} />
       </div>
       <div className={styles.techStackIcons}>
         {techStackIcons.map((icon) => (

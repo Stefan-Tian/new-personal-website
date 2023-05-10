@@ -4,7 +4,6 @@ import WordPiece from 'components/word-piece';
 import styles from 'styles/modules/home.module.scss';
 
 import type { NextPage } from 'next';
-import Image from 'next/image';
 
 const Home: NextPage = () => {
   return (
@@ -24,11 +23,9 @@ const Home: NextPage = () => {
           ready web applications using <WordPiece word="React and Vue" />.
         </p>
         <div className={styles.imageContainer}>
-          <Image
+          <img
             className={styles.image}
             src="https://ignyte-public.s3.us-west-1.amazonaws.com/hero-developer.png"
-            width={400}
-            height={400}
             alt="developer-portrait"
           />
         </div>
