@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         <div className={styles.imageContainer}>
           <img
             className={styles.image}
-            src="https://ignyte-public.s3.us-west-1.amazonaws.com/hero-developer.png"
+            src="https://ignyte-public.s3.us-west-1.amazonaws.com/hero-developer.avif"
             alt="developer-portrait"
           />
         </div>
