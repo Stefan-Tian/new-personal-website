@@ -13,7 +13,7 @@ const Appbar = () => {
         </Link>
         <a
           className={styles.navItem}
-          href="https://www.linkedin.com/in/stefan-tian-021542125/"
+          href="https://www.linkedin.com/in/stefan-tien-021542125/"
           target="_blank"
           rel="noreferrer"
         >
